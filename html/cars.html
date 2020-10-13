@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car</title>
+</head>
+<body id='body'>
+    <a href="ls.html"><button id ="landscape">Landscapes</button></a>
+    <a href="cars.html"><button id ="car">Car</button></a>
+    <a href="architecture.html"><button>Architechure</button></a>
+    <a href="hills.html"><button id='hill'>hill</button></a>
+    <p id='car'></p>
+</body>
+<script>
+    console.log(1);
+    var carpics = ["images/car1.jpg","images/car2.jpg","images/car3.jpg" ,"images/car4.jpg"];
+    window.onload =  ( function()
+    {
+        document.getElementById('car').innerHTML="we are in cars";
+        var i =0; 
+        for(i = 0 ; i < carpics.length ; i++)
+        {
+             var img = document.createElement('img'); 
+             img.src = carpics[i];
+             img.width = 100;
+             img.height = 100;
+             img.id ='imgspace';  
+             document.getElementById('body').appendChild(img); 
+        }
+    })();
+</script>
+</html>

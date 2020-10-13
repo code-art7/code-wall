@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hills</title>
+</head>
+<body id='body'>
+    <a href="ls.html"><button id ="landscape">Landscapes</button></a>
+    <a href="cars.html"><button id ="car">Car</button></a>
+    <a href="architecture.html"><button>Architechure</button></a>
+    <a href="hills.html"><button id='hill'>hill</button></a>
+    <p id='hills'></p>
+</body>
+<script>
+    console.log(1);
+    var hillpics = ["images/hill1.jpg","images/hill2.jpg","images/hill3.jpg" ,"images/hill4.jpg"];
+    window.onload =  ( function()
+    {
+        document.getElementById('hills').innerHTML="we are in hills";
+        var i =0; 
+        for(i = 0 ; i < hillpics.length ; i++)
+        {
+             var img = document.createElement('img'); 
+             img.src = hillpics[i];
+             img.width = 100;
+             img.height = 100;  
+             document.getElementById('body').appendChild(img);      
+        }
+
+    })();
+</script>
+</html>
