@@ -1,9 +1,46 @@
-body {
-    background-color: powderblue;
-  }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
-  }
+
+#header {
+  background: #213e3b;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5% 5%;
+}
+#logo{
+  color: azure;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#top-nav-links{
+  margin-top: 3%;
+  list-style: none;
+}
+
+#top-nav-links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#top-nav-links li a{
+  text-decoration: none;
+  color: azure;
+  transition: all 0.3s ease 0s;
+}
+
+#top-nav-links li a:hover{
+  color: rgb(171, 226, 43);
+}
+#space{
+  height: .5%;
+  width: auto;
+  background: transparent;
+}
+
+#searchbox{
+  height: 30%;
+  width: auto;
+  background: #41aea9;
+}
