@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="styles/main.css">
             <link rel="stylesheet" href="styles/bootstrap-4.3.1-dist/css/bootstrap.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
@@ -12,18 +13,48 @@
         <script src="scripts/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
         
         <header id="header">
-            <a id="logo" href="#">LOGO</a>
+            <a id="logo" href="#"><img src="static-files/main/depictwall_logo.png" alt=""></a>
             <nav>
                 <ul id="top-nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">HOT</a></li>
-                    <li><a href="#">USER</a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:36px">search</i></a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:36px">whatshot</i></a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:36px">perm_identity</i></a></li>
                 </ul>
             </nav>
         </header>
-        <div id="space"></div>
+        
         <div id="searchbox">
-           <h1 align="center">SEARCHBOX</h1>
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+                <input type="text" placeholder="Search.." name="search" id="searchbar">
+                <button type="submit"><i class="material-icons">search</i></button>
+              </form>
+        </div>
+
+        <div id="quickbar">
+            <nav>
+                <ul id="quick-nav-links">
+                    <li><a href="#">LATEST WALLPAPER</a></li>
+                    <li><a href="#">TOP WALLPAPER</a></li>
+                    <li><a href="#">UPLOAD</a></li>
+                </ul>
+            </nav>
+            <div id="sidenav" class="active">
+                    <a href="#">ARCHITECTURE</a>
+                    <a href="#">CARS</a>
+                    <a href="#">LANDSCAPE</a>
+                    <a href="#">PORTRAIT</a>
+                    <a href="#">BLACK AND WHITE</a>
+                    <a href="#">ART</a>
+                    <a href="#">CELEBRITIES</a>
+                    <a href="#">COMPUTERS</a>
+            </div>
+            <div id="text">
+                <img src="html/images/arc1.jpg" alt="arc1"><br>
+                <img src="html/images/arc2.jpg" alt="arc2"><br>
+                <img src="html/images/arc3.jpg" alt="arc3" style="width: 50%;"><br>
+                <img src="html/images/arc4.jpg" alt="arc4" style="width: 50%;"><br> 
+            </div>
+            
         </div>
     </body>
 </html>

@@ -1,21 +1,25 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+} 
 
 #header {
-  background: #213e3b;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background: #004480;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5% 5%;
-}
-#logo{
-  color: azure;
-  cursor: pointer;
-  text-decoration: none;
+  padding: 0% 5%;
 }
 
 #top-nav-links{
-  margin-top: 3%;
+  margin-top: 4%;
   list-style: none;
 }
 
@@ -31,7 +35,7 @@
 }
 
 #top-nav-links li a:hover{
-  color: rgb(171, 226, 43);
+  color: #ff6b35;
 }
 #space{
   height: .5%;
@@ -42,5 +46,99 @@
 #searchbox{
   height: 30%;
   width: auto;
-  background: #41aea9;
+  background: #004480;
+}
+
+#searchbox form{
+  position: relative;
+  top: 30%;
+}
+form.example input[type=text] {
+  margin-top: 10%;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  border-radius: 30px 0px 0px 30px;
+  background: #f1f1f1;
+}
+
+form.example button {
+  margin-top: 10%;
+  border-radius: 0px 30px 30px 0px;
+  float: left;
+  width: 10%;
+  padding: 10.55px;
+  background: #ff6b35;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  left: -5%;
+  position: sticky;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#quickbar{
+  width: auto;
+  height: 7%;
+  background-color: ff6b35;
+  justify-content: space-between;
+  margin-left: 15%;
+}
+
+#quick-nav-links{
+  list-style: none;
+}
+
+#quick-nav-links li{
+  display: inline-block;
+  padding: 13px 10%;
+}
+
+#quick-nav-links li a{
+  text-decoration: none;
+  color: azure;
+  transition: all 0.3s ease 0s;
+}
+
+#quick-nav-links li a:hover{
+  color: #0b7dda;
+}
+
+#sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #004480;
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 70px;
+}
+
+#sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  display: block;
+}
+
+#sidenav a:hover {
+  color: #ff6b35;
 }
