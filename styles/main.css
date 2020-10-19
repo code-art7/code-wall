@@ -1,87 +1,114 @@
-*{
+
+* {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
-} 
+}
 
-#header {
-  width: 100%;
-  height: 70px;
+#headerbar{
   position: fixed;
-  background: #004480;
-  color: white;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0% 5%;
+  width: 100%;
+}
+/* HEADER TOP BAR START */
+#logo{
+  margin-left: 3%;
 }
 
-#top-nav-links{
-  margin-top: 4%;
-  list-style: none;
+ul.topnav {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #004e89;
+}
+#topnav-search, #topnav-categories{
+  display: none;
+}
+ul.topnav li {
+  float: right;
 }
 
-#top-nav-links li{
+ul.topnav li a {
   display: inline-block;
-  padding: 0px 20px;
-}
-
-#top-nav-links li a{
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: azure;
-  transition: all 0.3s ease 0s;
+  transition: 0.3s;
+  font-size: 17px;
 }
-
-#top-nav-links li a:hover{
+  
+ul.topnav li a:hover {
   color: #ff6b35;
 }
-#space{
-  height: .5%;
-  width: auto;
-  background: transparent;
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+  #topnav-search,#topnav-categories{
+    display: block;
+  }
 }
 
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+/* HEADER TOP BAR END */
+
+/* SEARCHBAR START */
 #searchbox{
-  height: 30%;
   width: auto;
-  background: #004480;
+  height: 30%;
+  background: #004e89;
 }
-
-#searchbox form{
-  position: relative;
-  top: 30%;
+form.example{
+  margin: auto; 
+  max-width: 600px;
 }
 form.example input[type=text] {
-  margin-top: 10%;
+  margin: 100px 0px 30px 0px;
   padding: 10px;
+  float: left;
   font-size: 17px;
   border: 1px solid grey;
-  float: left;
-  width: 80%;
   border-radius: 30px 0px 0px 30px;
+  width: 80%;
   background: #f1f1f1;
 }
 
 form.example button {
-  margin-top: 10%;
-  border-radius: 0px 30px 30px 0px;
+  margin: 100px 0px 30px 0px;
   float: left;
-  width: 10%;
-  padding: 10.55px;
+  width: 20%;
+  padding: 10px;
   background: #ff6b35;
   color: white;
   font-size: 17px;
+  border-radius: 0px 30px 30px 0px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
-  left: -5%;
-  position: sticky;
 }
 
 form.example button:hover {
-  background: #0b7dda;
+  background: #004e89;
+  color: #ff6b35;
 }
 
 form.example::after {
@@ -90,26 +117,51 @@ form.example::after {
   display: table;
 }
 
+@media screen and (max-width:680px) {
+  form.example{
+    max-width: 300px;
+  }
+
+  form.example input[type=text]{
+    padding: 5px;
+  }
+
+  form.example button{
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width:900px){
+  form.example{
+    max-width: 450px;
+  }
+
+  form.example input[type=text]{
+    padding: 7px;
+  }
+
+  form.example button{
+    padding: 7px;
+  }
+}
+/* SEARCHBAR END */
+/* Quicklink start */
 #quickbar{
-  width: auto;
-  height: 7%;
-  background-color: ff6b35;
+  height: 5%;
+  background-color: #ff6b35;
   justify-content: space-between;
   margin-left: 15%;
 }
-
 #quick-nav-links{
   list-style: none;
 }
-
 #quick-nav-links li{
   display: inline-block;
   padding: 13px 10%;
 }
-
 #quick-nav-links li a{
+  color: aliceblue;
   text-decoration: none;
-  color: azure;
   transition: all 0.3s ease 0s;
 }
 
@@ -117,28 +169,52 @@ form.example::after {
   color: #0b7dda;
 }
 
+@media screen and (max-width:680px){
+  #quick-nav-links li{
+    display: block;
+   
+  }
+  #quickbar{
+    margin-left: 0%;
+
+  }
+}
+/* Quicklink end */
+
+/* sidenav start */
 #sidenav {
   height: 100%;
-  width: 15%;
+  width: 20%;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #004480;
-  
+  background-color: #004e89;
   overflow-x: hidden;
-  padding-top: 20px;
-  margin-top: 70px;
+  padding-top: 100px;
+  top: 8%;
 }
 
 #sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #f1f1f1;
+  color: #d8cbcb;
   display: block;
 }
-
+#sidenav h4{
+  color: #ff6b35;
+  display: block;
+  padding: 6px 8px 0px 16px;
+}
 #sidenav a:hover {
   color: #ff6b35;
 }
+@media screen and (max-width:680px){
+  #sidenav{
+    display: none;
+  }
+}
+/* sidenav end */
+
+/* wallpapaer zone start */
+
+/* WAllpaper zone end */

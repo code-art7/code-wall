@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Depictwall</title>
@@ -9,52 +10,90 @@
     </head>
 
     <body>
+        <!-- SCRIPTS START-->
         <script src="scripts/main.js"></script>
         <script src="scripts/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
-        
-        <header id="header">
-            <a id="logo" href="#"><img src="static-files/main/depictwall_logo.png" alt=""></a>
-            <nav>
-                <ul id="top-nav-links">
-                    <li><a href="#"><i class="material-icons" style="font-size:36px">search</i></a></li>
-                    <li><a href="#"><i class="material-icons" style="font-size:36px">whatshot</i></a></li>
-                    <li><a href="#"><i class="material-icons" style="font-size:36px">perm_identity</i></a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div id="searchbox">
-            <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
-                <input type="text" placeholder="Search.." name="search" id="searchbar">
-                <button type="submit"><i class="material-icons">search</i></button>
-              </form>
-        </div>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- SCRIPTS END -->
 
-        <div id="quickbar">
-            <nav>
-                <ul id="quick-nav-links">
-                    <li><a href="#">LATEST WALLPAPER</a></li>
-                    <li><a href="#">TOP WALLPAPER</a></li>
-                    <li><a href="#">UPLOAD</a></li>
-                </ul>
-            </nav>
-            <div id="sidenav" class="active">
-                    <a href="#">ARCHITECTURE</a>
-                    <a href="#">CARS</a>
-                    <a href="#">LANDSCAPE</a>
-                    <a href="#">PORTRAIT</a>
-                    <a href="#">BLACK AND WHITE</a>
-                    <a href="#">ART</a>
-                    <a href="#">CELEBRITIES</a>
-                    <a href="#">COMPUTERS</a>
+        <!-- Topbar start -->
+        <div id="headerbar">
+            <ul class="topnav">
+                <a href="#" id="logo"><img src="static-files/main/depictwall_logo.png" alt=""></a>
+                <li><a href="#">USER</a></li>
+                <li><a href="#" id="topnav-search">SEARCH</a></li>
+                <li><a href="#" id="topnav-categories">CATEGORIES</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()"><i class="material-icons">menu</i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Topbar end -->
+  
+        <!-- searchBar start -->
+        <div id="searchbox">
+
+            <form class="example" action="#" >
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+            
+            <!-- serachbar end -->
+
+            <!-- quicknav links start -->
+            <div id="quickbar">
+                <nav>
+                    <ul id="quick-nav-links">
+                        <li><a href="#">LATEST WALLPAPER</a></li>
+                        <li><a href="#">TOP WALLPAPER</a></li>
+                        <li><a href="#">UPLOAD</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div id="text">
+            <!-- quicknav link end -->
+
+            <!-- Sidenav start -->
+            <div id="sidenav" class="active">
+                <h4><b>CATEGORIES</b></h4>
+                <a href="#">ARCHITECTURE</a>
+                <a href="#">CARS</a>
+                <a href="#">LANDSCAPE</a>
+                <a href="#">PORTRAIT</a>
+                <a href="#">BLACK AND WHITE</a>
+                <a href="#">ART</a>
+                <a href="#">CELEBRITIES</a>
+                <a href="#">COMPUTERS</a>
+                <p id="demo"></p>
+        </div>
+            <!-- Sidenav end -->
+            <!-- wallpapers zone start-->
+
+            <!-- Wallpaper zone end -->
+
+
+            <!-- image area -->
+            <!-- <div id="text">
                 <img src="html/images/arc1.jpg" alt="arc1"><br>
                 <img src="html/images/arc2.jpg" alt="arc2"><br>
                 <img src="html/images/arc3.jpg" alt="arc3" style="width: 50%;"><br>
                 <img src="html/images/arc4.jpg" alt="arc4" style="width: 50%;"><br> 
-            </div>
+            </div> -->
+
+            <!-- demo -->
             
-        </div>
-    </body>
-</html>
+
+<script>
+var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+var x = document.getElementById("demo");
+x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+</script>
+        </body>
+            </html>
