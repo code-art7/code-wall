@@ -9,7 +9,7 @@
   width: 100%;
 }
 #logo{
-  margin-left: 3%;
+  margin: 2% 0% 0% 7%;
 }
 
 ul.topnav {
@@ -31,7 +31,7 @@ ul.topnav li a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   transition: 0.3s;
   font-size: 17px;
@@ -54,17 +54,17 @@ ul.topnav li.icon {display: none;}
 }
 
 @media screen and (max-width:680px) {
-  ul.topnav#wallzone {position: relative;}
-  ul.topnav#wallzone li.icon {
+  ul.topnav#wall-zonezone {position: relative;}
+  ul.topnav#wall-zonezone li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  ul.topnav#wallzone li {
+  ul.topnav#wall-zonezone li {
     float: none;
     display: inline;
   }
-  ul.topnav#wallzone li a {
+  ul.topnav#wall-zonezone li a {
     display: block;
     text-align: center;
   }
@@ -76,7 +76,7 @@ ul.topnav li.icon {display: none;}
   width: auto;
   height: 30%;
   background: #004e89;
-  margin-left: 15%;
+  margin-left: 0  ;
 }
 form.example{
   margin: auto; 
@@ -182,29 +182,31 @@ form.example::after {
   width: 250px;
   position: fixed;
   z-index: 1;
-  background-color: #f1f1f1;
+  background-color: #ff6b35;
   overflow-x: hidden;
   padding-top: 10px;
-  top: 55px;
+  top: 65px;
+  margin: 10px 10px;
+  border-radius: 5px;
 }
 
 #sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 30px;
   text-decoration: none;
   font-size: 15px;
-  color: #d8cbcb;
+  color: #ffffff;
   display: block;
 }
 #sidenav h4{
   font-size: 25px;
   font-family: "Lucida Console", Courier, monospace;
-  color: #ff6b35;
+  color: #004e89;
   letter-spacing: 5px;
   display: block;
   padding: 15px 0px 15px 16px;
 }
 #sidenav a:hover {
-  color: #ff6b35;
+  color: #004e89;
 }
 @media screen and (max-width:900px){
   #sidenav {
@@ -225,22 +227,22 @@ form.example::after {
 }
 /* sidenav end */
 
-/* wallpapaer zone start */
-#wall{
-  margin: 2% 2% 2% 260px;
-  background-color: #f7c59f;
+/* wall-zonepapaer zone start */
+#wall-zone{
+  margin: 2% 2% 2% 280px;
+  background: #d9dfec;
   height: 650px;
 }
 
-#wall h3{
+#wall-zone h3{
   text-align: center;
   color: #004e89;
   font-family: cursive;
   letter-spacing: 20px;
-  text-shadow: -2px -1px 3px black;
+  text-shadow: -2px -1px 3px rgb(61, 60, 60);
   padding: 16px;
 }
-#wall div{
+#wall-zone div{
   width: 31%;
   height: 260px;
   background-color: #ffffff;
@@ -248,39 +250,39 @@ form.example::after {
   display: inline-block;
   margin: 0% 0% 1% 1%;
 }
-#wall img{
+#wall-zone img{
   padding: 3px;
   width: 100%;
   height: 88%;
   object-fit: cover;
 }
-#wall #download{
+#wall-zone #download{
   border: none;
   float: right;
   background: none;
   margin: 5px 5px 0px 5px;
 }
 
-#wall #like{
+#wall-zone #like{
   border: none;
   float: right;
   margin: 5px 0px 0px 5px;
   background: none;
 }
 
-#wall #auther{
+#wall-zone #auther{
   text-decoration: none;
   padding: 0 0 0 4px;
   font-size: 12px;
 }
 
 @media screen and (max-width:900px){
-  #wall{
+  #wall-zone{
     margin-left: 210px;
   }
 }
 @media screen and (max-width:680px){
-  #wall img{
+  #wall-zone img{
     background-color: aqua;
     width: 90%;
     height: 30%;
@@ -288,38 +290,8 @@ form.example::after {
   }
 }
 
-/* Wallpaperzone end */
+/* Wall-zonepaperzone end */
 /* category zone start */
 
-#wall{
-  margin: 2% 2% 2% 260px;
-  background-color: #f7c59f;
-  height: 650px;
-}
 
-#wall h3{
-  text-align: center;
-  color: #004e89;
-  font-family: cursive;
-  letter-spacing: 20px;
-  text-shadow: -2px -1px 3px black;
-  padding: 16px;
-}
-
-#catzone{
-  margin: 2% 1% 0% 16%;
-  background-color: #f7c59f;
-  height: 750px;
-}
-
-#catzone ul li{
-  margin-top: 2%;
-  display: inline-block;
-  list-style: none;
-}
-
-#catzone h3{
-  text-align: center;
-  padding: 2% 0% 0% 0%;
-}
 /* category zone end */
